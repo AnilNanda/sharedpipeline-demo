@@ -2,7 +2,7 @@ def call(scriptPath,ci_pipelines_repository,ci_pipelines_repository_branch)
 {
 def commons
 def script
-node("master") {
+node("jenkins-ecs-slave") {
 checkout changelog: false, poll: false,
 	scm: [$class	:'GitSCM',
 	branches	:[[name:ci_pipelines_repository_branch]],
