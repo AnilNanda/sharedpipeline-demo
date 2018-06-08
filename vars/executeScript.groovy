@@ -15,5 +15,6 @@ checkout changelog: false, poll: false,
 	script=load(scriptPath)
 }
  script.commons = commons
+ println(commons)
  script.runScript()
 }
