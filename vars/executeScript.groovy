@@ -13,6 +13,7 @@ checkout changelog: false, poll: false,
 	]
 	commons = load("src/common/script.groovy")
 	script=load(scriptPath)
+	println(commons)
 }
  script.commons = commons
  println(commons)
